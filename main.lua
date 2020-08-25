@@ -1,9 +1,13 @@
 -- Adds a mushroom spread mechanic to Cuberite.
+-- Mushrooms will slowly duplicate themselves into neighboring tiles.
+-- This is subject to certain restrictions, e.g., darkness is required.
+--
+-- Some background:
 -- In version Beta 1.6, Minecraft added unrestricted mushroom spread.
 -- In version Beta 1.8, this was severely nerfed.
 -- Cuberite actually (at the time of writing) implements neither.
 --
--- This plugin attempts to mimic the 1.6 spread behavior.
+-- This plugin attempts to more-or-less mimic the 1.6 spread behavior.
 -- Now, one can have proper automatic mushroom farms on Cuberite servers!
 -- See the constants below for details on what parameters control growth.
 
