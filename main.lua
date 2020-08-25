@@ -1,3 +1,12 @@
+-- Adds a mushroom spread mechanic to Cuberite.
+-- In version Beta 1.6, Minecraft added unrestricted mushroom spread.
+-- In version Beta 1.8, this was severely nerfed.
+-- Cuberite actually (at the time of writing) implements neither.
+--
+-- This plugin attempts to mimic the 1.6 spread behavior.
+-- Now, one can have proper automatic mushroom farms on Cuberite servers!
+-- See the constants below for details on what parameters control growth.
+
 -- Globals
 PLUGIN = nil -- Holds the plugin object.
 LOGGED = 0   -- Number of players logged in. TODO: Maybe use better heuristic?
@@ -81,5 +90,4 @@ function BlockCanHostFungus(World, Block)
      and World:GetBlockSkyLight  (Block) == 0
      and cBlockInfo:IsSolid(World:GetBlock(Block + Vector3i(0, -1, 0)))
      and World:GetBlock(Block) == E_BLOCK_AIR
-     
 end
